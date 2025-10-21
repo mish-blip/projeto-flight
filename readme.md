@@ -22,13 +22,13 @@ FLIGHT (microframework)
    ver se os arquivos abaixo estão ok/editar:
    
 ( CONFIGURAR DATABASE/CLOUDINARY  
-editar :  
-config.php - credenciais do cloudinary /
-index.php - configurações do banco de dados /
-phinx.php - configuraçoes do banco de dados ) /
+editar :  \  
+config.php - credenciais do cloudinary  \  
+index.php - configurações do banco de dados  \  
+phinx.php - configuraçoes do banco de dados )  \  
    
-5. no terminal do projeto;
-   vendor\bin\phinx
+5. no terminal do projeto;  \  
+   vendor\bin\phinx  \  
    phinx migrate 
 
 
