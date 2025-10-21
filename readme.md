@@ -28,8 +28,7 @@ index.php - configurações do banco de dados
 phinx.php - configuraçoes do banco de dados )    
   
 5. no terminal do projeto;  
-   vendor\bin\phinx  
-   phinx migrate  
+   vendor\bin\phinx migrate  
 
 
 ## EXPLICAÇÃO
