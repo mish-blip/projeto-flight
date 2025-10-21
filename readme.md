@@ -23,9 +23,9 @@ FLIGHT (microframework)
    
 ( CONFIGURAR DATABASE/CLOUDINARY  
 editar :  
-   config.php - credenciais do cloudinary
-   index.php - configurações do banco de dados
-   phinx.php - configuraçoes do banco de dados )
+config.php - credenciais do cloudinary /
+index.php - configurações do banco de dados /
+phinx.php - configuraçoes do banco de dados ) /
    
 5. no terminal do projeto;
    vendor\bin\phinx
