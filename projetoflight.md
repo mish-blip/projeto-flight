@@ -1,11 +1,9 @@
 ## PROJETO DESENVOLVIMENTO WEB
 
 * bibliotecas FRONTEND
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/2560px-Bootstrap_logo.svg.png)
 Bootstrap
 
 * bibliotecas BACKEND:
-![](https://imgur.com/a/o6Cysly)
 Illuminate (Laravel - Eloquent/Illuminate)  
 Dotenv  
 Phinx  
