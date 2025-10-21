@@ -54,12 +54,12 @@ FLIGHT (microframework)
 
 ---
 
-## ▶️ Como Rodar o Projeto
+## Rodar o Projeto
 
 1.  Garanta que os módulos **Apache** e **MySQL** estejam iniciados no painel de controle do XAMPP.
 2.  Abra seu navegador e acesse a seguinte URL:
 
-    `http://localhost/nome-do-projeto/public`
+    `http://localhost/projeto-flight/public`
 
 ## EXPLICAÇÃO
 
