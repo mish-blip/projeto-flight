@@ -7,24 +7,24 @@ use Flight;
 
 class UserController
 {
-    public function showRegistrationForm() // mostrar o forms
+    public function showRegistrationForm()
     {
-        Flight::render('cadastro'); //cadastro.php em views
+        Flight::render('cadastro'); //render o formulário
     }
 
     // método para processar o formulário de cadastro
     public function store()
     {
-        // 1. Pega todos os dados enviados no forms
+        // pega todos os dados enviados no forms
         $data = Flight::request()->data;
 
-        // 2. CRIPTOGRAFA A SENHA
+        // criptografa a senha
         $data['password'] = password_hash($data['password'], PASSWORD_DEFAULT);
 
-        // 3. O método 'create' usa a lista '$fillable' e cria o usuário
+        // o método 'create' usa a lista '$fillable' e cria o usuário
         User::create($data->getData());
 
-        // 4. Redireciona para a pagina seguinte
+        // no fim, redireciona para a pagina seguinte
         Flight::redirect('/login');
     }
 }

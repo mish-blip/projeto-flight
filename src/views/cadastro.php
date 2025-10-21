@@ -13,7 +13,7 @@
         .card-img-left {
             width: 45%;
             /* A imagem de fundo é definida aqui! */
-            background: scroll center url('https://i.pinimg.com/736x/86/b4/fe/86b4fe63a46d42c21ec6e02dc3b71168.jpg');
+            background: scroll center url('/projeto-flight/public/static/download.jpg');
             background-size: cover;
         }
 
@@ -81,7 +81,7 @@
               </div>
 
               <hr class="my-4">
-              <a class="d-block text-center mt-2 small" href="#">Já tem uma conta? Entre</a>
+              <a class="d-block text-center mt-2 small" href="/projeto-flight/public/login">Já tem uma conta? Entre</a>
               </div>
             </form>
           </div>

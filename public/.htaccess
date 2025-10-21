@@ -7,5 +7,5 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
-# ...então, envie a requisição para o index.php
+# envie a requisição para o public/index.php
 RewriteRule ^ index.php [QSA,L]

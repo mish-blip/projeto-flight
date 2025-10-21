@@ -1,14 +1,13 @@
 /* classe */
 .hover-effect img {
-  transform: scale(1.1); /* Começa com zoom */
+  transform: scale(1.1);
   transition: transform 0.4s ease;
 }
 
 .hover-effect:hover img {
-  transform: scale(1); /* Tira o zoom no hover */
+  transform: scale(1); 
 }
 
-/* O overlay escuro */
 .hover-effect::before {
   content: '';
   position: absolute;
@@ -20,7 +19,7 @@
 }
 
 .hover-effect:hover::before {
-  opacity: 0; /* Some no hover */
+  opacity: 0; 
 }
 
 

@@ -8,10 +8,10 @@ class ImageUploadService
 {
     public function __construct()
     {
-        // Carrega as credenciais do nosso novo arquivo de configuração
+        // carrega as credenciais do nosso novo arquivo de configuração
         $configValues = require __DIR__ . '/../../config/cloudinary.php';
 
-        // Configura a conexão com o Cloudinary
+        // configura a conexão com o Cloudinary
         Configuration::instance([
             'cloud' => [
                 'cloud_name' => $configValues['cloud_name'],

@@ -2,7 +2,6 @@
 
 namespace App\Models;
 
-// importa a classe Model principal do Eloquent, e User herda da Model 
 use Illuminate\Database\Eloquent\Model;
 class User extends Model
 

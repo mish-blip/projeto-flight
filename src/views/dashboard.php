@@ -54,10 +54,11 @@
         </div>
         <div class="container-fluid d-flex justify-content-center">
           <a href="#" class="me-3 text-body text-decoration-none border-end pe-3" >Catálogo</a>
-          <a href="#" class="me-3 text-body text-decoration-none pe-3" >Serviços e Suporte</a>
+          <a href="#" class="disabled me-3 text-body text-decoration-none pe-3" >Serviços e Suporte</a>
         </div>
         <div class="container-fluid d-flex justify-content-end">
         <a href="/projeto-flight/public/login" class="me-3 h5 text-body"><i class="bi bi-file-person-fill"></i></a>
+        <a href="/projeto-flight/public/products" class="me-3 h5 text-body"><i class="bi bi-chevron-bar-right"></i></a>
         </div>
 </nav>
 
@@ -82,9 +83,9 @@
         <aside class="pt-5">
 
             <div>
-              <p>A Flight é especialista em dar suporte a proprietários de aeronaves, operadores e oficinas de manutenção (MROs), oferecendo soluções que reduzem custos e serviços de valor agregado em cada fase do ciclo de vida de uma aeronave.
-              Como um dos principais fornecedores do setor, nosso foco é a distribuição global de peças, componentes e consumíveis de aviação. Através de programas inovadores de gestão de inventário e cadeia de suprimentos, garantimos que nossos clientes tenham a peça certa, no lugar certo e na hora certa.
-              Trabalhamos em parceria com nossos clientes para garantir que, à medida que suas necessidades mudem, tenhamos a solução de serviço ideal e pronta para ser adaptada.</p>
+              <p>Com um foco dedicado à distribuição global de peças, componentes e consumíveis de aviação, somos o parceiro ideal para operadores e oficinas de manutenção. Nossa missão é oferecer soluções que garantem a eficiência e a segurança em cada fase do ciclo de vida de uma aeronave.
+
+Explore abaixo nosso inventário e, se interessado, solicite uma cotação.</p>
             </div>
 
         </aside>
@@ -149,6 +150,15 @@
                                 <h4 class="card-title"><?= htmlspecialchars($product->headline_1) ?></h4>
                                 <p class="card-text"><?= htmlspecialchars($product->headline_2) ?></p>
                                 <p class="card-text"><?= htmlspecialchars($product->descricao) ?></p>
+                                <br>
+                                <button type="button" class="btn btn-primary p-2 me-3 disabled" data-bs-toggle="#" data-bs-target="#contactModal">
+                                Documentos Técnicos
+                                </button>
+                                <button type="button" class="btn btn-info p-2" data-bs-toggle="modal" data-bs-target="#contactModal">
+                                Solicitar Cotação
+                                </button>
+                                <p><br></p>
+                                <br>
                             </div>
                         </div>
                     </div>
@@ -162,6 +172,45 @@
         <?php endif; ?>
     </div>
         <a href="/projeto-flight/public/logout" class="h5 text-body ms-3 mb-4 p-3 pb-4"><i class="bi bi-box-arrow-left"></i></a>
+
+<!-- Modal de contato -->
+
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="contactModalLabel">Solicitar Cotação</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+        <form action="/projeto-flight/public/contato/enviar" method="POST">
+            <div class="mb-3">
+                <label for="contact-name" class="form-label">Seu Nome:</label>
+                <input type="text" class="form-control bg-body" id="contact-name" name="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="contact-email" class="form-label">Seu Email:</label>
+                <input type="email" class="form-control bg-body" id="contact-email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="contact-tech" class="form-label">Tecnologia(s) de interesse:</label>
+                <input type="text" class="form-control bg-body" id="contact-tech" name="tech" required>
+            </div>
+            <div class="mb-3">
+                <label for="contact-message" class="form-label">Mensagem:</label>
+                <textarea class="form-control bg-body" id="contact-message" name="message" rows="5" required></textarea>
+            </div>
+            
+        </form>
+
+      </div>
+      <div class="modal-footer">
+            <button type="submit" class="btn btn-info">Solicitar</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

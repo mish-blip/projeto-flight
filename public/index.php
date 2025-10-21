@@ -23,21 +23,21 @@ use App\Controllers\DashboardController;
 use App\Controllers\InicioController;
 use App\Controllers\ProductController;
 
-// função global para verificar se o usuário é adm
+// função para verificar o usuário
 function checkAdmin() {
-    // 1º Verificação: O usuário está logado?
+    // verificação: O usuário está logado?
     if (!isset($_SESSION['user_id'])) {
-        // Se não estiver, expulsa para a página de login.
+        // se não estiver, expulsa para a página de login.
         Flight::redirect('/login');
         die();
     }
 
-    // 2º Verificação: O usuário logado é um admin?
-    $user = App\Models\User::find($_SESSION['user_id']); // Busca o usuário no banco
+    // verificação: O usuário logado é um admin?
+    $user = App\Models\User::find($_SESSION['user_id']); // busca o usuário no banco
 
-    // Se o usuário não for encontrado OU se a coluna 'is_admin' não for 1...
+    // se o usuário não for encontrado / se a coluna 'is_admin' não for = 1
     if (!$user || $user->is_admin != 1) {
-        // ...expulsa para a página inicial, pois ele não tem permissão.
+        // expulsa para a página inicial, pois não tem permissão
         Flight::redirect('/public/');
         die();
     }
@@ -66,7 +66,6 @@ $capsule->addConnection([   // essa é a conexão com o banco de dados
 
 $capsule->setAsGlobal();
 $capsule->bootEloquent(); 
-//
 
     /** rotas */
 
@@ -83,38 +82,38 @@ Flight::route('GET /dashboard', [$dashboardController, 'index']);
 //logout
 Flight::route('GET /logout', [$loginController, 'logout']);
 
-// --- ROTAS DE PRODUTOS ---
+// rotas de produtos
 
-// (READ) Mostra a lista de todos os produtos - ROTA PÚBLICA
+// (READ) mostra a lista de todos os produtos - pública
 Flight::route('GET /products', [$productController, 'index']);
 
-// (CREATE) Mostra o formulário para criar um novo produto - ROTA PROTEGIDA
+// (CREATE) mostra o formulário para criar um novo produto - só pra admin
 Flight::route('GET /products/create', function(){
-    checkAdmin(); // <-- O SEGURANÇA NA PORTA!
+    checkAdmin(); //protege
     (new App\Controllers\ProductController())->create();
 });
 
-// (CREATE) Salva o novo produto no banco - ROTA PROTEGIDA
+// (CREATE) salva o novo produto no banco - só pra admin
 Flight::route('POST /products', function(){
-    checkAdmin(); // <-- O SEGURANÇA NA PORTA!
+    checkAdmin(); //protege
     (new App\Controllers\ProductController())->store();
 });
 
-// (UPDATE) Mostra o formulário para editar - ROTA PROTEGIDA
+// (UPDATE) mostra o formulário para editar - só pra admin
 Flight::route('GET /products/@id/edit', function($id){
-    checkAdmin(); // <-- O SEGURANÇA NA PORTA!
+    checkAdmin(); //protege
     (new App\Controllers\ProductController())->edit($id);
 });
 
-// (UPDATE) Salva as alterações no banco - ROTA PROTEGIDA
+// (UPDATE) salva as alterações no banco - só pra admin
 Flight::route('POST /products/@id/update', function($id){
-    checkAdmin(); // <-- O SEGURANÇA NA PORTA!
+    checkAdmin(); //protege
     (new App\Controllers\ProductController())->update($id);
 });
 
-// (DELETE) Apaga um produto do banco - ROTA PROTEGIDA
+// (DELETE) apaga um produto do banco - só pra admin
 Flight::route('POST /products/@id/delete', function($id){
-    checkAdmin(); // <-- O SEGURANÇA NA PORTA!
+    checkAdmin(); //protege
     (new App\Controllers\ProductController())->destroy($id);
 });
 

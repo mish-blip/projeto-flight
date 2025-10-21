@@ -229,18 +229,174 @@
 </section>
 <!-- -->
 
+<!-- divisoria -->
+<div class="bg-dark" style="height: 50px;"></div>
 
+<!-- secção atuação -->
+<section class="my-5">
+<div class="container">
 
+  <div class="row">
+        <article class="col-md-4">
 
+            <section id="news" class="pt-3 mt-4">
+              <h2> EMPRESAS PARCEIRAS │</h2>
+            </section>
 
+        </article>
+    
+      <div class="col-md-8">
+        <aside class="pt-5">
 
+            <div>
+              <p>nossas parcerias</p>
+            </div>
 
-<footer class="bg-light py-3"> <div class="container text-center">
-      <span class="text-muted">Footer</span>
+        </aside>
+      </div>
+
+  </div>
+
+</div>
+</section>
+
+<br>
+<br>
+<br>
+<br>
+
+<footer class="bg-dark text-light mt-5 border-top border-secondary">
+    <div class="container py-5">
+        <div class="row g-4">
+            <div class="col-12 col-lg-3 text-center text-lg-start">
+                <a class="navbar-brand text-body ms-3 h4 border-end pe-5" href="/projeto-flight/public/"><i class="bi bi-airplane-engines me-2"></i> Flight</a>
+                <p class="text-secondary small mb-0"><br>Soluções para a indústria aeroespacial.</p>
+                <br>
+                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#contactModal">
+                Entre em Contato
+                </button>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <h5 class="text-uppercase fs-6 mb-3">Sobre nós</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="/corporate-about/pt/" class="nav-link p-0 link-light opacity-75">Sobre</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="https://www.embraer.com/corporate-innovation/pt" class="nav-link p-0 link-light opacity-75">Atuação</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="https://www.embraer.com/corporate-careers/pt" class="nav-link p-0 link-light opacity-75">Empresas Parceiras</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="https://www.embraer.com/corporate-esg/overview/pt/" class="nav-link p-0 link-light opacity-75">Contato</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/media-center/pt/" class="nav-link p-0 link-light opacity-75">Catálogo</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <h5 class="text-uppercase fs-6 mb-3">Areas de atuação</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="/commercial-aviation/pt/" class="nav-link p-0 link-light opacity-75">Aviação Comercial</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/defense-security-overview/pt/" class="nav-link p-0 link-light opacity-75">Defesa e Segurança</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/executive-jets-overview/pt/" class="nav-link p-0 link-light opacity-75">Aviação Executiva</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/services-and-support-overview/pt/" class="nav-link p-0 link-light opacity-75">Serviços &amp; Suporte</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/agriculture/pt/" class="nav-link p-0 link-light opacity-75">Aviação Agrícola</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="/more-businesses/pt/" class="nav-link p-0 link-light opacity-75">Outros Negócios</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <h5 class="text-uppercase fs-6 mb-3">Transparência</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="/suppliers/pt" class="nav-link p-0 link-light opacity-75">Fornecedores</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="https://ri.embraer.com.br/en/" class="nav-link p-0 link-light opacity-75">Investidores</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="https://compliance.embraer.com.br/" target="_blank" class="nav-link p-0 link-light opacity-75">Integridade</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="https://canalconfidencial.com.br/embraerhelpline/" target="_blank" class="nav-link p-0 link-light opacity-75">Canal de denúncias - Helpline</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="border-secondary my-4">
+
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-6 text-center text-lg-start">
+                <span class="small text-secondary">Flight © 2025. Todos os direitos reservados.</span>
+            </div>
+            <div class="col-12 col-lg-6">
+                <ul class="nav justify-content-center justify-content-lg-end">
+                    <li class="nav-item">
+                        <a href="/termos-de-uso/pt/" class="nav-link px-2 link-light opacity-75 small">Termos de uso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/privacidade/pt/" class="nav-link px-2 link-light opacity-75 small">Privacidade</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-
 </footer>
 
+<!-- Modal de contato -->
+
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="contactModalLabel">Entre em Contato</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+        <form action="/projeto-flight/public/contato/enviar" method="POST">
+            <div class="mb-3">
+                <label for="contact-name" class="form-label">Seu Nome:</label>
+                <input type="text" class="form-control bg-body" id="contact-name" name="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="contact-email" class="form-label">Seu Email:</label>
+                <input type="email" class="form-control bg-body" id="contact-email" name="email" required>
+            </div>
+            <div class="mb-3">
+            </div>
+            <div class="mb-3">
+                <label for="contact-message" class="form-label">Mensagem:</label>
+                <textarea class="form-control bg-body" id="contact-message" name="message" rows="5" required></textarea>
+            </div>
+            
+        </form>
+
+      </div>
+      <div class="modal-footer">
+            <button type="submit" class="btn btn-info">Enviar Mensagem</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
