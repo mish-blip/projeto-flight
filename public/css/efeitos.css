@@ -1,0 +1,38 @@
+/* classe */
+.hover-effect img {
+  transform: scale(1.1); /* Começa com zoom */
+  transition: transform 0.4s ease;
+}
+
+.hover-effect:hover img {
+  transform: scale(1); /* Tira o zoom no hover */
+}
+
+/* O overlay escuro */
+.hover-effect::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: opacity 0.4s ease;
+  z-index: 1000;
+}
+
+.hover-effect:hover::before {
+  opacity: 0; /* Some no hover */
+}
+
+
+        .divimagem2 {
+          height: 300px; 
+          width: 100%;
+          overflow: hidden; 
+        }
+
+        .divimagem2 img {
+          width: 100%; 
+          height: 100%;
+          object-fit: cover;
+          object-position: center; 
+        }

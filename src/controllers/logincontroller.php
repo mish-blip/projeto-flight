@@ -28,7 +28,7 @@ class LoginController
 
             Flight::redirect('/dashboard');
         } else {
-            Flight::redirect('/projeto-flight/public/login');
+            Flight::redirect('/login');
         }
     }
 
