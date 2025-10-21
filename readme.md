@@ -21,11 +21,11 @@ FLIGHT (microframework)
 4. criar o DB vazio no phpmyadmin com o nome ‘flight\_projeto’
    ver se os arquivos abaixo estão ok/editar:
    
-## CONFIGURAR DATABASE/CLOUDINARY  
+( CONFIGURAR DATABASE/CLOUDINARY  
 editar :  
    config.php - credenciais do cloudinary
    index.php - configurações do banco de dados
-   phinx.php - configuraçoes do banco de dados ##
+   phinx.php - configuraçoes do banco de dados )
    
 5. no terminal do projeto;
    vendor\bin\phinx
