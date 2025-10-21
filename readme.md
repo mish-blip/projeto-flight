@@ -1,17 +1,17 @@
 ## PROJETO DESENVOLVIMENTO WEB
 
-* bibliotecas FRONTEND
-Bootstrap
+* bibliotecas FRONTEND  
+Bootstrap  
 
-* bibliotecas BACKEND:
-Illuminate (Laravel - Eloquent/Illuminate)  
+* bibliotecas BACKEND:  
+Illuminate (Laravel - Eloquent/Illuminate)    
 Dotenv  
 Phinx  
-Cloudinary.php
-
-* frameworks
-FLIGHT (microframework)
-
+Cloudinary.php  
+  
+* frameworks  
+FLIGHT (microframework)  
+  
 ## INSTALAÇÃO \- GUIA
 
 1. pull do github (ou baixar), 
@@ -22,14 +22,14 @@ FLIGHT (microframework)
    ver se os arquivos abaixo estão ok/editar:
    
 ( CONFIGURAR DATABASE/CLOUDINARY  
-editar :  \  
-config.php - credenciais do cloudinary  \  
-index.php - configurações do banco de dados  \  
-phinx.php - configuraçoes do banco de dados )  \  
-   
-5. no terminal do projeto;  \  
-   vendor\bin\phinx  \  
-   phinx migrate 
+editar :  
+config.php - credenciais do cloudinary    
+index.php - configurações do banco de dados  
+phinx.php - configuraçoes do banco de dados )    
+  
+5. no terminal do projeto;  
+   vendor\bin\phinx  
+   phinx migrate  
 
 
 ## EXPLICAÇÃO
